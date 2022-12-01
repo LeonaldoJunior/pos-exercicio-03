@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>To-do-list</title>
+  <title>Contagem Regressiva</title>
   <meta name="Pos Exercicio 02" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -65,15 +65,15 @@
               Cronometro
             </a>
           </li>
-          <li class="nav-item font-italic active">
+          <li class="nav-item font-italic">
             <a
               class="nav-link"
               href="/todolist.html"
             >
-              To-do-list
+              To-do list
             </a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item active">
             <a
               class="nav-link"
               href="/contagemregressiva.html"
@@ -91,30 +91,42 @@
 
       <div class="jumbotron jumbotron-fluid bg-info text-white text-center">
         <div class="container ">
-          <h1>To do list</h1>
+          <h1>Cronometro</h1>
           <p class="lead">O botão "Iniciar" coloca a aplicação em estado de incremento automático do temporizador.
             O botão "Pausar" congela a contagem, sem interferir no valor atual. O botão "Parar" zera e congela a contagem.
           </p>
         </div>
       </div>
 
-      <div id="lista-tarefas" class="container text-center">
+      <div class="container text-center">
         <div class="row justify-content-xl-center">
-          <div class="col form-group">
-            <button 
-              id="adicionar" 
-              type="button" class="btn btn-success form-control">
-              <i class="bi bi-plus-circle-fill"></i>
-              Adicionar tarefa
+          <div class="col-4 col-xl-3 order-1 form-group mb-0">
+            <button id="iniciar" type="button" class="btn btn-success form-control">
+              <i class="bi bi-play-circle-fill"></i>
+              Iniciar
             </button>
           </div>
-        </div>
 
-        <div class="row">
+          <div class="col-4 col-xl-3 order-2 form-group">
+            <button id="pausar" type="button" class="btn btn-warning form-control">
+              <i class="bi bi-stop-circle-fill"></i>
+              Pausar
+            </button>
+          </div>
           
+          <div class="col-4 col-xl-3 order-3 form-group">
+            <button id="parar" type="button" class="btn btn-danger form-control">
+              <i class="bi bi-pause-circle-fill"></i>
+              reiniciar
+            </button>
+          </div>
+
         </div>
       </div>
 
+      <div class="container text-center">
+        <output class="font-weight-bold display-1">0</output>
+      </div>
 
     </main>
     <footer></footer>
@@ -128,7 +140,7 @@
   <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
-  <script src="js/todolist.js"></script>
+  <script src="js/cronometro.js"></script>
 
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->

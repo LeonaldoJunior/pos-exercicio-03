@@ -90,44 +90,77 @@
     <main class="flex-grow pb-3 pt-sm-3 text-justify">
 
       <div class="jumbotron jumbotron-fluid bg-info text-white text-center">
-        <div class="container ">
-          <h1>Cronometro</h1>
-          <p class="lead">O botão "Iniciar" coloca a aplicação em estado de incremento automático do temporizador.
-            O botão "Pausar" congela a contagem, sem interferir no valor atual. O botão "Parar" zera e congela a contagem.
-          </p>
+        <div class="container">
+          <h1>Contagem Regressiva</h1>
+          <p class="lead">Essa aplicação exibe uma contagem regressiva para acabar o ano.</p>
         </div>
       </div>
 
-      <div class="container text-center">
+      <div class="container text-center lead font-weight-bold " style="height: 180px; width: 600px;">
+        
+        <div class="row h-50 text-white">
+          <div id="caixa-dias" class="pt-4 col mr-1 bg-dark d-flex justify-content-center align-items-center">
+
+          </div>
+          <div id="caixa-horas" class="pt-4  col mr-1 bg-dark d-flex justify-content-center align-items-center">
+
+          </div>
+          <div id="caixa-minutos" class="pt-4  col mr-1 bg-dark d-flex justify-content-center align-items-center">
+
+          </div>
+           <div id="caixa-segundos" class="pt-4  col mr-1 bg-dark d-flex justify-content-center align-items-center">
+
+          </div>
+        </div>
+
+        <div class="row h-50">
+          <div class="col mr-1 bg-light d-flex justify-content-center align-items-center">
+            dias
+          </div>
+          <div class="col mr-1 bg-light d-flex justify-content-center align-items-center">
+            horas
+          </div>
+          <div class="col mr-1 bg-light d-flex justify-content-center align-items-center">
+            minutos
+           </div>
+           <div class="col mr-1 bg-light d-flex justify-content-center align-items-center">
+             segundos
+           </div>
+        </div>
+
+        
+      </div>
+
+      <!-- <div class="container text-center">
         <div class="row justify-content-xl-center">
-          <div class="col-4 col-xl-3 order-1 form-group mb-0">
-            <button id="iniciar" type="button" class="btn btn-success form-control">
-              <i class="bi bi-play-circle-fill"></i>
-              Iniciar
-            </button>
+          <div class="col-3">
+            0
           </div>
-
-          <div class="col-4 col-xl-3 order-2 form-group">
-            <button id="pausar" type="button" class="btn btn-warning form-control">
-              <i class="bi bi-stop-circle-fill"></i>
-              Pausar
-            </button>
+          <div class="col-3">
+            0
           </div>
-          
-          <div class="col-4 col-xl-3 order-3 form-group">
-            <button id="parar" type="button" class="btn btn-danger form-control">
-              <i class="bi bi-pause-circle-fill"></i>
-              reiniciar
-            </button>
+          <div class="col-3">
+            0
           </div>
-
+          <div class="col-3">
+            0
+          </div>
         </div>
-      </div>
-
-      <div class="container text-center">
-        <output class="font-weight-bold display-1">0</output>
-      </div>
-
+        <div class="row justify-content-xl-center">
+          <div class="col-3">
+            0
+          </div>
+          <div class="col-3">
+            0
+          </div>
+          <div class="col-3">
+            0
+          </div>
+          <div class="col-3">
+            0
+          </div>
+        </div>
+      </div> -->
     </main>
     <footer></footer>
   </div>
@@ -140,7 +173,7 @@
   <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
-  <script src="js/cronometro.js"></script>
+  <script src="js/contagemregressiva.js"></script>
 
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
